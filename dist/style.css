@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------- */
+
+* {
+    font-family: 'Playfair', serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-size: 2rem;
+    color: white;
+}
+
+p {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.header {
+    height: 100px;
+    max-width: 100vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header > span {
+    font-size: 5rem;
+    color: white;
+    margin-left: 120px;
+    backdrop-filter: blur(3px);
+}
+
+.links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.links > a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin: 10px;
+    display: flex;
+    justify-self: end;
+}
+
+.links > a:hover {
+    color: #b89e14;
+    transition: 0.2s ease-in-out;
+}
+
+
+.main-content {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: row;
+}
+
+.home-screen{
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+}
+
+.about-screen{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.menu-screen {
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/16272484/pexels-photo-16272484/free-photo-of-comida-ligero-ciudad-pizza.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.contact-screen{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/3465604/pexels-photo-3465604.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.disabled {
+    display: none;
+}
+
+
+.col-50{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
+    height: 50%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card > span{
+    width: 95%;
+    margin: 5px;
+}
+
+.who {
+    width: 70%;
+    height: 70%;
+    backdrop-filter: blur(10px);
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.who > span {
+    font-size: 2.5rem;
+}
+
+.about-img{
+    aspect-ratio: 1 / 1;
+    height: 75%;
+    background-image: url(https://images.pexels.com/photos/10132214/pexels-photo-10132214.jpeg);
+    background-position: center;
+    background-size: contain;
+}
+
+.contact-img{
+    aspect-ratio: 1 / 1;
+    height: 75%;
+    background-image: url(https://images.pexels.com/photos/3184177/pexels-photo-3184177.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bar{
+    height: 1px;
+    background-color: white;
+    width: 60%;
+    margin: 25px 0;
+}
+
+cite {
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+.menu-screen > .card {
+    height: 75%;
+    width: 80%;
+    border: 1px solid white;
+    align-self: center;
+    justify-self: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-screen > .card:hover{
+    transition: 0.5s ease-in-out;
+}
+
+.card > .filter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > .filter:hover {
+    backdrop-filter: blur(2px);
+    transition: 0.3s ease-in-out;
+}
+
+.filter:hover > span{
+    opacity: 100;
+    margin-top: 250px;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(95, 94, 94, 0.5);
+}
+
+.filter > span {
+    font-size: 1.3rem;
+    user-select: none;
+    opacity: 0;
+    margin-top: 280px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+#card1 {
+    background-image: url(https://images.pexels.com/photos/343871/pexels-photo-343871.jpeg);
+}
+
+#card2 {
+    background-image: url(https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg);
+}
+#card3 {
+    background-image: url(https://images.pexels.com/photos/3789885/pexels-photo-3789885.jpeg);
+}
+#card4 {
+    background-image: url(https://images.pexels.com/photos/1988624/pexels-photo-1988624.jpeg);
+}
+#card5 {
+    background-image: url(https://images.pexels.com/photos/2114062/pexels-photo-2114062.jpeg);
+}
+#card6 {
+    background-image: url(https://images.pexels.com/photos/4559174/pexels-photo-4559174.jpeg);
+}
+#card7 {
+    background-image: url(https://images.pexels.com/photos/6605653/pexels-photo-6605653.jpeg);
+}
+#card8 {
+    background-image: url(https://images.pexels.com/photos/1998920/pexels-photo-1998920.jpeg);
+}
+#card9 {
+    background-image: url(https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg);
+}
+#card10 {
+    background-image: url(https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg);
+}
+
+.contact{
+    height: 55%;
+    width: 55%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
